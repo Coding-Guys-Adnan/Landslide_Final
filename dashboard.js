@@ -1,7 +1,5 @@
 // Base API URL - easily toggled between localhost and prod
-const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-    ? 'http://127.0.0.1:10000' 
-    : 'https://landslide-backend-rlbx.onrender.com';
+const API_BASE = 'https://landslide-final.onrender.com';
 
 Chart.defaults.color = '#dde2f0';
 Chart.defaults.font.family = "'Space Mono', monospace";
