@@ -1,6 +1,4 @@
-const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-    ? 'http://127.0.0.1:10000' 
-    : 'https://landslide-final.onrender.com';
+const API_BASE = 'https://landslide-final.onrender.com';
 
 // 1. Initialize Map
 const map = L.map('liveMap', {
