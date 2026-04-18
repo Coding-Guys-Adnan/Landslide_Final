@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pandas
+openpyxl
+fastapi-cors
+scikit-learn
+joblib
+pydantic

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Radar · Landslide Intelligence</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .live-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    height: calc(100vh - 180px);
+  }
+  .live-panel {
+    background-color: var(--panel-bg);
+    border: 1px solid var(--border-col);
+    border-radius: var(--br-lg);
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .live-sidebar {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    overflow-y: auto;
+  }
+  .live-map-wrap {
+    flex: 3;
+    position: relative;
+    border: 1px solid var(--border-col);
+    border-radius: var(--br-lg);
+    overflow: hidden;
+  }
+  #liveMap {
+    width: 100%;
+    height: 100%;
+    background-color: #0b0e14;
+  }
+  .live-item {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid #3a4060;
+    margin-bottom: 10px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  .live-item:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    transform: translateX(4px);
+  }
+  .live-item.risk-high {
+    border-color: #ff3d6b;
+  }
+  .live-item.risk-moderate {
+    border-color: #f5a623;
+  }
+  .live-item.risk-low {
+    border-color: #00cfff;
+  }
+  .live-title {
+    font-family: var(--font-sans);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border-col);
+    padding-bottom: 10px;
+  }
+  .subscribe-box {
+    margin-top: auto;
+    background: rgba(0, 207, 255, 0.05);
+    border: 1px solid rgba(0, 207, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+  }
+  .subscribe-input {
+    width: 100%;
+    padding: 10px;
+    background: var(--bg-dark);
+    border: 1px solid var(--border-col);
+    color: var(--text-main);
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    margin-bottom: 10px;
+  }
+  .subscribe-btn {
+    width: 100%;
+    padding: 10px;
+    background: #00cfff;
+    color: #0b0e14;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .subscribe-btn:hover {
+    background: #00aadd;
+  }
+  .subscribe-msg {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #00cfff;
+    text-align: center;
+    display: none;
+  }
+  .debug-panel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(11, 14, 20, 0.85);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--border-col);
+    padding: 15px;
+    border-radius: 8px;
+    font-family: var(--font-mono);
+    color: #dde2f0;
+    font-size: 0.8rem;
+    min-width: 200px;
+  }
+  .debug-stat {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .debug-stat:last-child {
+    margin-bottom: 0;
+  }
+  .error-banner {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    background: #ff3d6b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: none;
+    box-shadow: 0 4px 15px rgba(255, 61, 107, 0.4);
+  }
+</style>
+</head>
+<body class="dark-theme">
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-brand">🌍 Landslide Intelligence</div>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="live.html" class="nav-link active">Live Radar</a>
+    <a href="database.html" class="nav-link">Database Log</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="hero-section" style="padding: 30px 20px; min-height: auto;">
+  <div class="hdr-info">
+    <h1>Live Radar 📡</h1>
+    <p>Monitoring NCS & USGS seismic feeds alongside gridded rainfall in real-time. Automatically predicts landslide occurrence risks across the Indian Subcontinent.</p>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<div class="live-container">
+  <!-- Sidebar for Events -->
+  <div class="live-panel live-sidebar">
+    <div class="live-title">Live Predictions Queue <span id="eventCount" style="font-size: 0.8em; color: #888;">(0)</span></div>
+    
+    <div id="liveList" style="flex: 1; overflow-y: auto;">
+      <div style="text-align: center; color: #888; font-style: italic; margin-top: 20px;">Waiting for data sync...</div>
+    </div>
+
+    <!-- Email Subscription Box -->
+    <div class="subscribe-box">
+      <div class="live-title" style="font-size: 1rem; margin-bottom: 5px;">Get Automated Alerts</div>
+      <p style="font-size: 0.75rem; color: #aaa; margin-bottom: 10px; font-family: var(--font-mono);">
+        Subscribe your email to receive immediate alerts when a High-Risk (≥35% probability) prediction occurs.
+      </p>
+      <form id="subscribeForm">
+        <input type="email" id="subEmail" class="subscribe-input" placeholder="enter@email.com" required>
+        <button type="submit" class="subscribe-btn">Subscribe</button>
+        <div id="subMsg" class="subscribe-msg">Successfully Subscribed! ✓</div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Map Container -->
+  <div class="live-map-wrap" style="flex: 2;">
+    <div id="apiErrorBanner" class="error-banner">⚠️ Live data not available</div>
+    <div class="debug-panel">
+      <div style="font-weight: bold; margin-bottom: 8px; color: #00cfff;">Debug Stats</div>
+      <div class="debug-stat"><span>Eq Fetched:</span> <span id="debugEqCount">0</span></div>
+      <div class="debug-stat"><span>Rain Grids:</span> <span id="debugRainCount">0</span></div>
+      <div class="debug-stat"><span>Predictions:</span> <span id="debugPredCount">0</span></div>
+      <div class="debug-stat" style="margin-top: 10px; color: #aaa;"><span>Updated:</span> <span id="debugTime">Never</span></div>
+      <div style="display: flex; gap: 10px; margin-top: 15px;">
+        <button id="refreshDataBtn" class="subscribe-btn" style="padding: 5px; font-size: 0.8rem; background: #f5a623; color: #0b0e14;">Refresh 🔄</button>
+        <button id="toggleHistoryBtn" class="subscribe-btn" style="padding: 5px; font-size: 0.8rem;">Show History 🕒</button>
+      </div>
+    </div>
+    <div id="liveMap"></div>
+  </div>
+
+  <!-- Historical Panel -->
+  <div id="historyPanel" class="live-panel live-sidebar" style="min-width: 280px; max-width: 350px; display: none;">
+    <div class="live-title">Historical Log 🕒</div>
+    <div id="historyList" style="flex: 1; overflow-y: auto;">
+      <div style="text-align: center; color: #888; font-style: italic; margin-top: 20px;">Fetching logs...</div>
+    </div>
+  </div>
+</div>
+
+<script src="live.js"></script>
+</body>
+</html>

@@ -1,0 +1,403 @@
+Landslide Prediction Model - 100 Sample Tests
+==========================================================================================
+
+Test Case #1
+Inputs: Rain=182.9mm, Slope=1.6°, Elev=415.7m, NDVI=0.75, Clay=6.7%, Mag=7.9, Depth=26.2km, PGA=0.501g, MMI=7
+Result: 24.21% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #2
+Inputs: Rain=135.3mm, Slope=2.3°, Elev=1317.6m, NDVI=0.41, Clay=27.1%, Mag=7.4, Depth=43.1km, PGA=1.112g, MMI=9
+Result: 45.66% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #3
+Inputs: Rain=229.4mm, Slope=49.6°, Elev=2994.9m, NDVI=0.42, Clay=39.2%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 30.36% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #4
+Inputs: Rain=38.6mm, Slope=56.7°, Elev=2848.6m, NDVI=0.72, Clay=16.2%, Mag=5.0, Depth=26.4km, PGA=0.77g, MMI=6
+Result: 14.52% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #5
+Inputs: Rain=252.9mm, Slope=21.4°, Elev=2934.9m, NDVI=0.5, Clay=19.3%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 27.03% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #6
+Inputs: Rain=88.1mm, Slope=15.3°, Elev=3140.1m, NDVI=0.38, Clay=45.0%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 14.29% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #7
+Inputs: Rain=325.9mm, Slope=53.1°, Elev=2756.6m, NDVI=0.74, Clay=5.9%, Mag=7.8, Depth=49.3km, PGA=0.179g, MMI=10
+Result: 39.64% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #8
+Inputs: Rain=204.7mm, Slope=23.1°, Elev=3253.9m, NDVI=0.02, Clay=26.8%, Mag=6.0, Depth=19.0km, PGA=0.206g, MMI=9
+Result: 44.04% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #9
+Inputs: Rain=208.5mm, Slope=38.0°, Elev=1663.1m, NDVI=0.38, Clay=57.7%, Mag=7.4, Depth=34.1km, PGA=0.359g, MMI=6
+Result: 58.53% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #10
+Inputs: Rain=223.5mm, Slope=0.3°, Elev=1446.7m, NDVI=0.13, Clay=13.7%, Mag=4.0, Depth=46.5km, PGA=1.108g, MMI=3
+Result: 43.95% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #11
+Inputs: Rain=289.8mm, Slope=54.8°, Elev=3162.9m, NDVI=0.54, Clay=52.7%, Mag=6.7, Depth=34.8km, PGA=1.154g, MMI=8
+Result: 69.82% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #12
+Inputs: Rain=109.7mm, Slope=45.4°, Elev=942.5m, NDVI=0.21, Clay=48.5%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 37.37% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #13
+Inputs: Rain=309.4mm, Slope=39.2°, Elev=1968.2m, NDVI=0.77, Clay=36.8%, Mag=6.7, Depth=26.3km, PGA=0.163g, MMI=7
+Result: 42.19% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #14
+Inputs: Rain=330.3mm, Slope=53.4°, Elev=169.2m, NDVI=0.49, Clay=26.2%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 36.12% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #15
+Inputs: Rain=301.3mm, Slope=3.8°, Elev=1923.9m, NDVI=0.44, Clay=16.9%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 19.09% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #16
+Inputs: Rain=13.9mm, Slope=25.7°, Elev=1346.0m, NDVI=0.65, Clay=30.4%, Mag=6.5, Depth=16.1km, PGA=0.211g, MMI=9
+Result: 28.75% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #17
+Inputs: Rain=201.1mm, Slope=28.1°, Elev=3487.9m, NDVI=0.77, Clay=5.4%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 5.93% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #18
+Inputs: Rain=114.2mm, Slope=7.3°, Elev=846.3m, NDVI=0.49, Clay=49.7%, Mag=6.4, Depth=11.5km, PGA=0.779g, MMI=9
+Result: 56.33% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #19
+Inputs: Rain=314.1mm, Slope=21.6°, Elev=1906.9m, NDVI=0.78, Clay=30.0%, Mag=6.4, Depth=41.1km, PGA=0.831g, MMI=7
+Result: 56.62% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #20
+Inputs: Rain=95.2mm, Slope=25.5°, Elev=2562.7m, NDVI=0.55, Clay=8.8%, Mag=7.0, Depth=34.5km, PGA=0.622g, MMI=4
+Result: 37.36% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #21
+Inputs: Rain=396.4mm, Slope=15.9°, Elev=2558.5m, NDVI=0.78, Clay=40.1%, Mag=4.1, Depth=41.1km, PGA=0.871g, MMI=7
+Result: 43.83% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #22
+Inputs: Rain=151.0mm, Slope=56.6°, Elev=2158.0m, NDVI=0.16, Clay=23.4%, Mag=4.9, Depth=34.2km, PGA=1.122g, MMI=8
+Result: 54.31% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #23
+Inputs: Rain=291.2mm, Slope=40.0°, Elev=2928.4m, NDVI=0.69, Clay=9.2%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 26.61% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #24
+Inputs: Rain=240.2mm, Slope=44.2°, Elev=476.9m, NDVI=0.28, Clay=57.9%, Mag=7.5, Depth=8.6km, PGA=1.048g, MMI=4
+Result: 75.19% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #25
+Inputs: Rain=167.4mm, Slope=16.2°, Elev=2972.7m, NDVI=0.59, Clay=52.1%, Mag=7.0, Depth=43.1km, PGA=0.277g, MMI=10
+Result: 54.82% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #26
+Inputs: Rain=47.6mm, Slope=52.6°, Elev=1200.1m, NDVI=0.16, Clay=57.1%, Mag=7.7, Depth=29.4km, PGA=0.461g, MMI=8
+Result: 60.42% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #27
+Inputs: Rain=49.9mm, Slope=32.3°, Elev=1591.6m, NDVI=0.13, Clay=51.2%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 33.08% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #28
+Inputs: Rain=88.5mm, Slope=47.5°, Elev=3901.4m, NDVI=0.25, Clay=22.4%, Mag=3.9, Depth=48.1km, PGA=0.627g, MMI=6
+Result: 24.16% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #29
+Inputs: Rain=251.3mm, Slope=4.1°, Elev=209.5m, NDVI=0.37, Clay=52.2%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 46.28% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #30
+Inputs: Rain=62.9mm, Slope=15.2°, Elev=3357.8m, NDVI=0.53, Clay=35.9%, Mag=4.0, Depth=41.8km, PGA=0.483g, MMI=5
+Result: 9.89% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #31
+Inputs: Rain=42.1mm, Slope=28.6°, Elev=3123.9m, NDVI=0.13, Clay=23.7%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 7.73% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #32
+Inputs: Rain=95.1mm, Slope=25.1°, Elev=389.5m, NDVI=0.77, Clay=28.5%, Mag=5.3, Depth=36.0km, PGA=0.52g, MMI=5
+Result: 9.8% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #33
+Inputs: Rain=96.1mm, Slope=57.4°, Elev=3620.0m, NDVI=0.63, Clay=55.0%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 26.58% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #34
+Inputs: Rain=18.8mm, Slope=26.9°, Elev=464.8m, NDVI=0.66, Clay=22.5%, Mag=3.9, Depth=19.1km, PGA=0.881g, MMI=9
+Result: 6.66% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #35
+Inputs: Rain=291.9mm, Slope=36.5°, Elev=1383.8m, NDVI=0.32, Clay=18.4%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 34.31% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #36
+Inputs: Rain=384.7mm, Slope=25.5°, Elev=3858.0m, NDVI=0.74, Clay=17.6%, Mag=3.5, Depth=37.0km, PGA=1.095g, MMI=7
+Result: 39.57% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #37
+Inputs: Rain=194.1mm, Slope=54.5°, Elev=822.4m, NDVI=0.52, Clay=6.6%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 14.22% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #38
+Inputs: Rain=311.0mm, Slope=50.8°, Elev=2956.9m, NDVI=0.2, Clay=53.2%, Mag=3.8, Depth=34.0km, PGA=1.198g, MMI=8
+Result: 63.17% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #39
+Inputs: Rain=103.8mm, Slope=5.6°, Elev=50.5m, NDVI=0.67, Clay=52.8%, Mag=5.8, Depth=45.2km, PGA=0.147g, MMI=7
+Result: 35.45% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #40
+Inputs: Rain=397.0mm, Slope=10.6°, Elev=1988.7m, NDVI=0.25, Clay=32.4%, Mag=5.4, Depth=15.5km, PGA=1.094g, MMI=4
+Result: 53.23% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #41
+Inputs: Rain=86.2mm, Slope=59.4°, Elev=1915.7m, NDVI=0.13, Clay=10.9%, Mag=4.5, Depth=28.0km, PGA=1.171g, MMI=7
+Result: 32.67% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #42
+Inputs: Rain=229.4mm, Slope=6.8°, Elev=3597.4m, NDVI=0.16, Clay=13.8%, Mag=6.4, Depth=49.2km, PGA=0.964g, MMI=3
+Result: 63.4% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #43
+Inputs: Rain=129.5mm, Slope=9.4°, Elev=543.9m, NDVI=0.12, Clay=38.4%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 33.7% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #44
+Inputs: Rain=65.3mm, Slope=46.6°, Elev=3566.5m, NDVI=0.49, Clay=56.4%, Mag=5.0, Depth=29.0km, PGA=0.96g, MMI=4
+Result: 47.37% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #45
+Inputs: Rain=226.9mm, Slope=41.1°, Elev=1836.9m, NDVI=0.32, Clay=11.5%, Mag=5.5, Depth=19.4km, PGA=0.828g, MMI=9
+Result: 53.36% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #46
+Inputs: Rain=69.0mm, Slope=14.0°, Elev=345.7m, NDVI=0.67, Clay=24.2%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 3.15% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #47
+Inputs: Rain=72.4mm, Slope=59.6°, Elev=626.0m, NDVI=0.67, Clay=52.6%, Mag=3.5, Depth=28.4km, PGA=1.082g, MMI=7
+Result: 49.42% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #48
+Inputs: Rain=5.7mm, Slope=55.3°, Elev=1056.9m, NDVI=0.51, Clay=10.2%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 2.92% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #49
+Inputs: Rain=217.0mm, Slope=11.3°, Elev=3278.5m, NDVI=0.02, Clay=15.7%, Mag=4.2, Depth=7.3km, PGA=0.293g, MMI=4
+Result: 39.99% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #50
+Inputs: Rain=387.9mm, Slope=14.9°, Elev=1751.0m, NDVI=0.36, Clay=29.0%, Mag=6.1, Depth=31.0km, PGA=0.288g, MMI=6
+Result: 46.41% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #51
+Inputs: Rain=395.3mm, Slope=46.2°, Elev=2959.9m, NDVI=0.09, Clay=6.3%, Mag=4.9, Depth=31.1km, PGA=0.132g, MMI=8
+Result: 44.77% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #52
+Inputs: Rain=267.0mm, Slope=19.6°, Elev=2898.9m, NDVI=0.62, Clay=24.7%, Mag=4.4, Depth=32.8km, PGA=0.978g, MMI=7
+Result: 44.46% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #53
+Inputs: Rain=121.3mm, Slope=29.3°, Elev=3928.1m, NDVI=0.32, Clay=37.4%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 31.65% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #54
+Inputs: Rain=90.7mm, Slope=14.3°, Elev=3373.2m, NDVI=0.12, Clay=30.4%, Mag=5.6, Depth=30.3km, PGA=1.1g, MMI=3
+Result: 35.18% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #55
+Inputs: Rain=256.1mm, Slope=37.4°, Elev=1257.3m, NDVI=0.56, Clay=42.1%, Mag=6.9, Depth=38.0km, PGA=0.67g, MMI=10
+Result: 55.81% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #56
+Inputs: Rain=9.8mm, Slope=58.3°, Elev=1863.6m, NDVI=0.31, Clay=13.3%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 3.11% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #57
+Inputs: Rain=270.9mm, Slope=58.8°, Elev=428.2m, NDVI=0.78, Clay=46.3%, Mag=7.3, Depth=25.9km, PGA=0.076g, MMI=10
+Result: 45.68% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #58
+Inputs: Rain=308.5mm, Slope=32.5°, Elev=3721.0m, NDVI=0.19, Clay=24.8%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 39.6% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #59
+Inputs: Rain=295.2mm, Slope=59.9°, Elev=76.3m, NDVI=0.04, Clay=23.3%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 30.67% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #60
+Inputs: Rain=153.7mm, Slope=38.2°, Elev=2143.0m, NDVI=0.01, Clay=11.1%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 34.22% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #61
+Inputs: Rain=253.1mm, Slope=24.8°, Elev=3911.1m, NDVI=0.15, Clay=6.4%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 35.65% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #62
+Inputs: Rain=53.8mm, Slope=60.0°, Elev=3648.1m, NDVI=0.63, Clay=28.6%, Mag=7.8, Depth=33.9km, PGA=0.44g, MMI=9
+Result: 42.74% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #63
+Inputs: Rain=198.0mm, Slope=47.2°, Elev=2279.4m, NDVI=0.41, Clay=51.2%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 26.57% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #64
+Inputs: Rain=120.6mm, Slope=34.4°, Elev=92.4m, NDVI=0.28, Clay=36.2%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 29.46% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #65
+Inputs: Rain=250.3mm, Slope=35.8°, Elev=2519.6m, NDVI=0.26, Clay=45.3%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 39.71% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #66
+Inputs: Rain=177.1mm, Slope=50.0°, Elev=2618.5m, NDVI=0.33, Clay=25.1%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 15.58% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #67
+Inputs: Rain=386.9mm, Slope=48.8°, Elev=1548.2m, NDVI=0.54, Clay=28.8%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 36.12% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #68
+Inputs: Rain=327.1mm, Slope=45.5°, Elev=1332.0m, NDVI=0.72, Clay=56.4%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 39.39% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #69
+Inputs: Rain=268.5mm, Slope=42.6°, Elev=1040.0m, NDVI=0.66, Clay=11.0%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 25.15% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #70
+Inputs: Rain=226.9mm, Slope=8.8°, Elev=802.8m, NDVI=0.72, Clay=46.6%, Mag=5.7, Depth=17.5km, PGA=1.145g, MMI=9
+Result: 51.22% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #71
+Inputs: Rain=381.3mm, Slope=59.0°, Elev=647.1m, NDVI=0.14, Clay=45.6%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 36.88% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #72
+Inputs: Rain=272.0mm, Slope=32.9°, Elev=152.5m, NDVI=0.36, Clay=23.1%, Mag=7.4, Depth=30.1km, PGA=0.482g, MMI=5
+Result: 46.62% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #73
+Inputs: Rain=296.7mm, Slope=37.9°, Elev=420.4m, NDVI=0.23, Clay=55.5%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 40.86% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #74
+Inputs: Rain=303.1mm, Slope=0.8°, Elev=2472.5m, NDVI=0.18, Clay=30.9%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 37.33% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #75
+Inputs: Rain=185.0mm, Slope=8.6°, Elev=1666.6m, NDVI=0.21, Clay=45.1%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 37.29% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #76
+Inputs: Rain=125.6mm, Slope=26.9°, Elev=3961.2m, NDVI=0.73, Clay=14.3%, Mag=4.7, Depth=11.7km, PGA=0.507g, MMI=8
+Result: 10.23% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #77
+Inputs: Rain=110.4mm, Slope=26.1°, Elev=3056.3m, NDVI=0.17, Clay=30.1%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 31.19% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #78
+Inputs: Rain=329.2mm, Slope=37.5°, Elev=659.1m, NDVI=0.21, Clay=31.7%, Mag=3.6, Depth=39.9km, PGA=0.913g, MMI=4
+Result: 51.61% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #79
+Inputs: Rain=28.0mm, Slope=42.0°, Elev=2862.4m, NDVI=0.57, Clay=40.3%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 3.33% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #80
+Inputs: Rain=209.7mm, Slope=55.9°, Elev=2128.2m, NDVI=0.17, Clay=25.4%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 34.56% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #81
+Inputs: Rain=28.7mm, Slope=11.0°, Elev=2923.3m, NDVI=0.44, Clay=21.5%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 3.15% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #82
+Inputs: Rain=248.7mm, Slope=5.4°, Elev=1501.7m, NDVI=0.52, Clay=31.4%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 18.68% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #83
+Inputs: Rain=40.8mm, Slope=23.4°, Elev=1776.2m, NDVI=0.06, Clay=21.6%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 7.96% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #84
+Inputs: Rain=357.1mm, Slope=14.4°, Elev=3095.0m, NDVI=0.3, Clay=24.6%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 39.36% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #85
+Inputs: Rain=268.4mm, Slope=27.0°, Elev=2161.8m, NDVI=0.22, Clay=35.7%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 35.26% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #86
+Inputs: Rain=41.5mm, Slope=43.3°, Elev=83.6m, NDVI=0.25, Clay=25.1%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 6.38% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #87
+Inputs: Rain=334.8mm, Slope=35.8°, Elev=2778.1m, NDVI=0.14, Clay=55.1%, Mag=3.6, Depth=36.7km, PGA=1.134g, MMI=5
+Result: 68.34% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #88
+Inputs: Rain=358.8mm, Slope=38.2°, Elev=1548.3m, NDVI=0.51, Clay=5.3%, Mag=4.3, Depth=36.4km, PGA=1.034g, MMI=10
+Result: 46.45% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #89
+Inputs: Rain=307.2mm, Slope=26.9°, Elev=2342.0m, NDVI=0.52, Clay=41.4%, Mag=5.0, Depth=23.2km, PGA=0.598g, MMI=6
+Result: 46.15% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #90
+Inputs: Rain=333.0mm, Slope=35.6°, Elev=1438.4m, NDVI=0.58, Clay=58.3%, Mag=7.4, Depth=18.0km, PGA=0.773g, MMI=6
+Result: 62.16% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #91
+Inputs: Rain=237.9mm, Slope=21.7°, Elev=190.3m, NDVI=0.29, Clay=23.9%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 30.44% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #92
+Inputs: Rain=243.6mm, Slope=17.0°, Elev=3327.1m, NDVI=0.63, Clay=23.5%, Mag=5.5, Depth=16.5km, PGA=1.014g, MMI=9
+Result: 48.01% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #93
+Inputs: Rain=343.9mm, Slope=22.1°, Elev=1114.5m, NDVI=0.3, Clay=38.1%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 39.4% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #94
+Inputs: Rain=2.4mm, Slope=33.2°, Elev=1901.7m, NDVI=0.45, Clay=13.8%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 3.15% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #95
+Inputs: Rain=243.5mm, Slope=22.8°, Elev=1504.3m, NDVI=0.74, Clay=21.8%, Mag=6.3, Depth=18.8km, PGA=0.438g, MMI=7
+Result: 44.5% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #96
+Inputs: Rain=148.1mm, Slope=33.9°, Elev=2519.1m, NDVI=0.46, Clay=37.2%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 18.77% --> LOW RISK
+----------------------------------------------------------------------
+Test Case #97
+Inputs: Rain=209.5mm, Slope=54.3°, Elev=3455.2m, NDVI=0.09, Clay=35.7%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 35.96% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #98
+Inputs: Rain=222.0mm, Slope=44.9°, Elev=2249.6m, NDVI=0.63, Clay=30.4%, Mag=6.7, Depth=10.3km, PGA=0.914g, MMI=7
+Result: 61.86% --> HIGH RISK
+----------------------------------------------------------------------
+Test Case #99
+Inputs: Rain=227.8mm, Slope=38.7°, Elev=2896.6m, NDVI=0.78, Clay=34.9%, Mag=0.0, Depth=10.0km, PGA=0.0g, MMI=1
+Result: 25.4% --> MODERATE RISK
+----------------------------------------------------------------------
+Test Case #100
+Inputs: Rain=253.2mm, Slope=35.9°, Elev=938.0m, NDVI=0.42, Clay=5.1%, Mag=6.6, Depth=38.2km, PGA=0.209g, MMI=8
+Result: 46.24% --> HIGH RISK
+----------------------------------------------------------------------

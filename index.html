@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India Seismic & Landslide Risk Atlas · Research Grade · 2000–2026</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-brand">🌍 Landslide Intelligence</div>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="live.html" class="nav-link">Live Radar</a>
+    <a href="database.html" class="nav-link">Database Log</a>
+  </div>
+</nav>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="ld-title">🌏 Research Grade Atlas</div>
+  <div class="ld-track"><div class="ld-fill" id="lbar"></div></div>
+  <div class="ld-sub" id="lsub">Fetching dataset from backend…</div>
+  <div class="ld-badge">
+    <div class="ld-b"><div class="ld-b-val">15,140</div><div class="ld-b-lbl">Events</div></div>
+    <div class="ld-b"><div class="ld-b-val">1,522</div><div class="ld-b-lbl">Landslides</div></div>
+    <div class="ld-b"><div class="ld-b-val">2000–2026</div><div class="ld-b-lbl">Span</div></div>
+    <div class="ld-b"><div class="ld-b-val">5 Sources</div><div class="ld-b-lbl">Detection</div></div>
+  </div>
+</div>
+
+<!-- HEADER / HERO -->
+<header class="hero-section">
+  <div class="hdr-logo">🌏</div>
+  <div class="hdr-info">
+    <h1>India Seismic & Landslide Risk Atlas</h1>
+    <p>Real-time ML risk assessment and live API map. Spanning 2000–2026 with 15,140 curated records.</p>
+  </div>
+  <div class="hdr-stats">
+    <div class="hdr-stat"><div class="hdr-stat-val">15,140</div><div class="hdr-stat-lbl">Total Events</div></div>
+    <div class="hdr-stat b3"><div class="hdr-stat-val">1,522</div><div class="hdr-stat-lbl">Landslides</div></div>
+    <div class="hdr-stat b2"><div class="hdr-stat-val">7.8</div><div class="hdr-stat-lbl">Max Mw</div></div>
+    <div class="hdr-stat b4"><div class="hdr-stat-val" id="statShown">15140</div><div class="hdr-stat-lbl">Shown</div></div>
+  </div>
+</header>
+
+<!-- TABS -->
+<div class="tabbar">
+  <button class="tab active" onclick="switchMap('earthquake')">⚡ Magnitude</button>
+  <button class="tab" onclick="switchMap('depth')">🕳️ Depth</button>
+  <button class="tab" onclick="switchMap('pga')">📳 PGA</button>
+  <button class="tab" onclick="switchMap('mmi')">🏚️ MMI</button>
+  <button class="tab" onclick="switchMap('landslide_occ')">🚨 Landslide Occurred</button>
+  <button class="tab" onclick="switchMap('detection')">🔬 Detection Source</button>
+  <button class="tab" onclick="switchMap('rainfall')">🌧️ Rainfall</button>
+  <button class="tab" onclick="switchMap('slope')">📐 Slope</button>
+  <button class="tab" onclick="switchMap('ndvi')">🌿 NDVI</button>
+  <button class="tab" onclick="switchMap('elevation')">🗻 Elevation</button>
+  <button class="tab" onclick="switchMap('landcover')">🗺️ Land Cover</button>
+  <button class="tab" onclick="switchMap('soil')">🧱 Soil</button>
+  <button class="tab" onclick="switchMap('river')">🌊 River</button>
+  <button class="tab" onclick="switchMap('compare')">📊 Region Compare</button>
+</div>
+
+<!-- BODY -->
+<div class="body">
+  <div class="sidebar"><div class="sb-inner" id="sidebar"></div></div>
+  <div class="map-wrap">
+    <div class="map-title" id="mapTitle">Earthquake Magnitude Distribution</div>
+    <div id="map"></div>
+    <div class="map-legend-float" id="floatLegend" style="display:none"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

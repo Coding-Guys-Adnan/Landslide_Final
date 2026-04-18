@@ -1,0 +1,51 @@
+2026-04-18 01:02:00,741  WARNING     NCS feed unavailable (HTTPSConnectionPool(host='seismo.gov.in', port=443): Max retries exceeded with url: /aces_web/rest_api/getRecentEQ (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)')))) — will fall back to USGS.
+2026-04-18 01:10:45,889  WARNING     NCS feed unavailable (HTTPSConnectionPool(host='seismo.gov.in', port=443): Max retries exceeded with url: /aces_web/rest_api/getRecentEQ (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)')))) — will fall back to USGS.
+2026-04-18 01:13:03,928  WARNING     NCS feed unavailable (HTTPSConnectionPool(host='seismo.gov.in', port=443): Max retries exceeded with url: /aces_web/rest_api/getRecentEQ (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)')))) — will fall back to USGS.
+2026-04-18 01:22:06,771  WARNING     NCS feed unavailable (HTTPSConnectionPool(host='seismo.gov.in', port=443): Max retries exceeded with url: /aces_web/rest_api/getRecentEQ (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)')))) — will fall back to USGS.
+2026-04-18 01:29:28,756  WARNING     NCS feed unavailable (HTTPSConnectionPool(host='seismo.gov.in', port=443): Max retries exceeded with url: /aces_web/rest_api/getRecentEQ (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)')))) — will fall back to USGS.
+2026-04-18 09:06:07,293  WARNING     NCS feed unavailable (HTTPSConnectionPool(host='seismo.gov.in', port=443): Max retries exceeded with url: /aces_web/rest_api/getRecentEQ (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)')))) — will fall back to USGS.
+2026-04-18 09:42:38,796  WARNING     NCS feed unavailable (HTTPSConnectionPool(host='seismo.gov.in', port=443): Max retries exceeded with url: /aces_web/rest_api/getRecentEQ (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)')))) — will fall back to USGS.
+2026-04-18 10:04:18,319  WARNING     NCS feed unavailable (HTTPSConnectionPool(host='seismo.gov.in', port=443): Max retries exceeded with url: /aces_web/rest_api/getRecentEQ (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)')))) — will fall back to USGS.
+2026-04-18 10:15:35,801  WARNING     NCS feed unavailable (HTTPSConnectionPool(host='seismo.gov.in', port=443): Max retries exceeded with url: /aces_web/rest_api/getRecentEQ (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)')))) — will fall back to USGS.
+2026-04-18 10:16:54,395  WARNING     NCS feed unavailable (HTTPSConnectionPool(host='seismo.gov.in', port=443): Max retries exceeded with url: /aces_web/rest_api/getRecentEQ (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)')))) — will fall back to USGS.
+2026-04-18 11:18:28,257  WARNING     NCS feed unavailable (HTTPSConnectionPool(host='seismo.gov.in', port=443): Max retries exceeded with url: /aces_web/rest_api/getRecentEQ (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)')))) — will fall back to USGS.
+2026-04-18 11:56:34,539  WARNING     NCS feed unavailable (HTTPSConnectionPool(host='seismo.gov.in', port=443): Max retries exceeded with url: /aces_web/rest_api/getRecentEQ (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)')))) — will fall back to USGS.
+2026-04-18 12:03:04,168  WARNING     NCS feed unavailable (HTTPSConnectionPool(host='seismo.gov.in', port=443): Max retries exceeded with url: /aces_web/rest_api/getRecentEQ (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)')))) — will fall back to USGS.
+2026-04-18 12:03:30,780  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:03:30,781  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:03:30,781  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:03:46,967  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:03:46,967  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:03:46,967  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:04:05,165  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:04:05,166  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:04:05,167  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:04:28,708  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:04:28,709  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:04:28,709  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:04:45,159  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:04:45,159  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:04:45,159  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:05:04,404  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:05:04,404  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:05:04,404  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:05:34,537  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:05:34,538  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:05:34,538  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:05:54,002  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:05:54,002  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:05:54,002  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:06:09,177  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:06:09,177  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:06:09,177  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:08:49,382  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:08:49,383  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:08:49,383  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:13:49,773  WARNING     NCS feed unavailable (HTTPSConnectionPool(host='seismo.gov.in', port=443): Max retries exceeded with url: /aces_web/rest_api/getRecentEQ (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)')))) — will fall back to USGS.
+2026-04-18 12:13:50,886  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:13:50,897  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:13:50,898  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:18:51,222  WARNING     NCS feed unavailable (HTTPSConnectionPool(host='seismo.gov.in', port=443): Max retries exceeded with url: /aces_web/rest_api/getRecentEQ (Caused by SSLError(SSLError(1, '[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1000)')))) — will fall back to USGS.
+2026-04-18 12:18:52,245  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:18:52,245  WARNING     send_report_email: SMTP credentials missing — skipping.
+2026-04-18 12:18:52,247  WARNING     send_report_email: SMTP credentials missing — skipping.

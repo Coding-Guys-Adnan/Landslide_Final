@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Database Log · Landslide Intelligence</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .db-container { padding: 40px 40px 80px 40px; display: flex; flex-direction: column; gap: 30px; overflow-y: auto; flex: 1; min-height: 0; }
+  .db-table-wrap { background: var(--panel-bg); border: 1px solid var(--border-col); border-radius: var(--br-lg); padding: 20px; overflow-x: auto; box-shadow: 0 8px 30px rgba(0,0,0,0.4); }
+  .db-title { font-size: 1.5rem; font-family: var(--font-sans); margin-bottom: 20px; border-bottom: 1px solid var(--border-col); padding-bottom: 10px; color: var(--text-main); }
+  table { width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 0.85rem; }
+  th, td { text-align: left; padding: 12px 15px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+  th { background-color: rgba(0, 207, 255, 0.05); color: #00cfff; font-weight: bold; border-top: 1px solid rgba(0,207,255,0.2); border-bottom: 1px solid rgba(0,207,255,0.2); }
+  tr:hover { background-color: rgba(255,255,255,0.02); }
+  .mag-high { color: #ff3d6b; font-weight: bold; }
+  .mag-mod { color: #f5a623; }
+  .rain-high { color: #00cfff; font-weight: bold; }
+</style>
+</head>
+<body class="dark-theme">
+
+<nav class="navbar">
+  <div class="nav-brand">🌍 Landslide Intelligence</div>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="live.html" class="nav-link">Live Radar</a>
+    <a href="database.html" class="nav-link active">Database Log</a>
+  </div>
+</nav>
+
+<header class="hero-section" style="padding: 30px 20px; min-height: auto;">
+  <div class="hdr-info">
+    <h1>Live Database Log 🗄️</h1>
+    <p>View the historical log of all earthquakes and rainfall records persisted to the SQLite database.</p>
+  </div>
+</header>
+
+<div class="db-container">
+  <div class="db-table-wrap">
+    <h2 class="db-title">Event Database - Earthquakes</h2>
+    <table>
+      <thead><tr><th>ID</th><th>Timestamp (IST)</th><th>Magnitude</th><th>Location</th><th>Lat</th><th>Lon</th></tr></thead>
+      <tbody id="eqBody"><tr><td colspan="6" style="text-align: center; color: #888;">Fetching database records...</td></tr></tbody>
+    </table>
+  </div>
+  
+  <div class="db-table-wrap">
+    <h2 class="db-title">Event Database - Rainfall Grids</h2>
+    <table>
+      <thead><tr><th>ID</th><th>Timestamp (IST)</th><th>Region</th><th>30d Rain (mm)</th><th>Lat</th><th>Lon</th></tr></thead>
+      <tbody id="rainBody"><tr><td colspan="6" style="text-align: center; color: #888;">Fetching database records...</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<div style="flex-shrink: 0; height: 2px; width: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2), var(--accent3), var(--accent4));"></div>
+
+<script src="database.js"></script>
+</body>
+</html>
